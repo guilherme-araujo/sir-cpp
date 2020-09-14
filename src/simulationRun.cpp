@@ -52,8 +52,7 @@ SimulationResults SimulationRun::runSimV1(SimulationData simulationData, int ti)
 		vector<GsopNode> nodeslist;
 
 		if(simulationData.stateHistory){
-			simulationResults.stateHistoryStr += "shistory;"+ti+
-			';'+to_string(i)+';'+stateSnapshot;
+			simulationResults.stateHistoryStr += "shistory;"+to_string(ti)+";"+to_string(i)+";"+stateSnapshot;
 
 		}
 
