@@ -12,10 +12,10 @@ OBJS=$(subst .cc,.o,$(SRCS))
 all: make
 
 make: $(OBJS)
-	$(CXX) $(CPPFLAGS) $(LDFLAGS) -o ./dist/gsop $(OBJS)
+	$(CXX) $(CPPFLAGS) $(LDFLAGS) -o ./dist/sircppsim $(OBJS)
 
 clean:
 	$(RM) $(OBJS)
 
 distclean: clean
-	$(RM) ./dist/gsop
+	$(RM) ./dist/sircppsim
